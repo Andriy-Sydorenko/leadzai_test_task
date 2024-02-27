@@ -25,13 +25,3 @@ def generate_pagination(current_page, total_pages, boundaries, around):
                 pages.append("...")
 
     return ' '.join(pages)
-
-
-print(generate_pagination(0, 0, 0, 0))
-
-# Example Test Cases
-test_cases = [
-    {"current_page": 10, "total_pages": 10, "boundaries": 1, "around": 0},
-    {"current_page": 4, "total_pages": 10, "boundaries": 2, "around": 2}
-]
-
